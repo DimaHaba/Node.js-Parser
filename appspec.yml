@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /edetek/node-api
+hooks:
+  BeforeInstall:
+  - location: scripts/remove_package.sh
+    timeout: 300
+    runas: root
+  AfterInstall:
+  - location: scripts/server_start.sh
+    timeout: 300
+    runas: root

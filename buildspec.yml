@@ -1,0 +1,27 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - npm cache clean -force  
+  pre_build:
+    commands:
+      - echo Installing packages...
+      - aws s3 cp s3://conform5-setup-bucket/conform5-artifactory-install.sh ./
+      - bash conform5-artifactory-install.sh
+      - npm install
+      - npm --version
+
+  build:
+    commands:
+      - echo Testing stage
+      - echo Running Unit Tests
+      - npm run unit
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - ls
+artifacts:
+  files:
+     - ./**/*
+  name: bvo-$(date +%Y-%m-%d)

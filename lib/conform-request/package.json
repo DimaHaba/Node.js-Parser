@@ -1,0 +1,17 @@
+{
+  "name": "conform-request",
+  "version": "1.0.0",
+  "description": "Comform reuquest service",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Dmitriy Molchanov",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}

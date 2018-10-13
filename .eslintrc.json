@@ -1,0 +1,47 @@
+{
+    "extends": "standard",
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "rules": {
+        "comma-dangle": ["error"],
+        "quotes": ["error"],
+        "eqeqeq": ["error"],
+        "arrow-spacing": ["error"],
+        "no-unused-vars": ["error"],
+        "space-before-blocks": ["error"],
+        "generator-star-spacing": ["error"],
+        "key-spacing": ["error"],
+        "no-useless-escape": ["error"],
+        "block-spacing": ["error"],
+        "no-extra-boolean-cast": ["error"],
+        "standard/object-curly-even-spacing": ["error"],
+        "comma-spacing": ["error"],
+        "new-cap": ["error"],
+        "no-new": ["error"],
+        "standard/array-bracket-even-spacing": ["error"],
+        "semi": ["error", "always"],
+
+        "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
+        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+        "eol-last": ["error", "always"],
+        "prefer-promise-reject-errors": ["off"],
+        "no-return-await": ["off"],
+        "invalid-async-constructor": ["off"],
+        "no-use-before-define": ["off"],
+        "no-unreachable": ["off"],
+        "no-trailing-spaces": ["off"],
+        "no-process-env": ["off"],
+        "no-return-assign": ["off"]
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+        "mocha": true
+    },
+    "plugins": [
+        "standard",
+        "promise",
+        "import"
+    ]
+}

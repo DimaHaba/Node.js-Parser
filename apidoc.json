@@ -1,0 +1,10 @@
+{
+  "name": "BVO API",
+  "version": "5.0.1",
+  "description": "API documentation for BVO",
+  "title": "BVO API",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

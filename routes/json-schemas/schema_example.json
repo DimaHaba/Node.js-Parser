@@ -1,0 +1,11 @@
+{
+  "title": "Some event",
+  "description": "This event does something",
+  "type": "object",
+  "properties": {
+    "originatingEventId": {
+      "type": "number"
+    }
+  },
+  "required": ["originatingEventId"]
+}

@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+logs/*
+
+# Dependency directory
+# https://docs.npmjs.com/cli/shrinkwrap#caveats
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+# Intellij Idea files
+.idea
+# VSCode files
+.vscode
+
+#Doc
+doc/*
+
+#Uploads
+uploads/*
+!uploads/description.txt
+
+package-lock.json
+
+config/localDev.js

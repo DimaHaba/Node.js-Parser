@@ -1,0 +1,17 @@
+{
+  "name": "jem",
+  "version": "1.0.0",
+  "description": "Comform5 JEM service",
+  "main": "index.js",
+  "directories": {
+    "test": "mocha test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Dmitriy Molchanov",
+  "license": "ISC",
+  "dependencies": {
+    "conform-request": "./../conform-request"
+  }
+}
